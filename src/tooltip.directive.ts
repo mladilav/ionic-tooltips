@@ -232,7 +232,7 @@ export class Tooltip implements OnInit, AfterViewInit, OnDestroy {
     } else if (this.positionH === 'left') {
       positionLeft = rect.left - spacing - tooltipNativeElement.offsetWidth;
     }  else if (this.positionH === 'center') {
-      positionLeft = rect.left - el.offsetWidth / 2; 
+      positionLeft = rect.left - el.offsetWidth; 
     } else if (this.navTooltip) {
       positionLeft = rect.left + el.offsetWidth / 2;
     } else {
