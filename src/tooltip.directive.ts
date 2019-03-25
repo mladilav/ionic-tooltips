@@ -239,6 +239,13 @@ export class Tooltip implements OnInit, AfterViewInit, OnDestroy {
       positionLeft = rect.left;
     }
 
+    console.log('rect', rect);
+    console.log('rect.left', rect.left);
+    console.log('rect.width', rect.width);
+    console.log('el', el);
+    console.log('el.offsetWidth', el.offsetWidth);
+    console.log('el.clientWidth', el.clientWidth);
+
     if (this.positionV === 'top') {
       positionTop = rect.top - spacing - tooltipNativeElement.offsetHeight;
     } else if (this.positionV === 'bottom') {
