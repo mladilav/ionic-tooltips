@@ -174,15 +174,20 @@ export class Tooltip implements OnInit, AfterViewInit, OnDestroy {
   }
 
   @HostListener('click')
-  onClick(): void {
+  onClick(ev): void {
     if (this.event === 'click') {
+      ev.preventDefault();
+      ev.stopPropagation();
       this.trigger();
+
     }
   }
 
   @HostListener('press')
-  onPress(): void {
+  onPress(ev): void {
     if (this.event === 'press') {
+      ev.preventDefault();
+      ev.stopPropagation();
       this.trigger();
     }
   }

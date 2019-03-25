@@ -47,8 +47,8 @@ export declare class Tooltip implements OnInit, AfterViewInit, OnDestroy {
      * Creates a new tooltip component and adjusts it's properties to show properly.
      */
     showTooltip(): void;
-    onClick(): void;
-    onPress(): void;
+    onClick(ev: any): void;
+    onPress(ev: any): void;
     onMouseEnter(): void;
     onMouseLeave(): void;
     private _createTooltipComponent();
