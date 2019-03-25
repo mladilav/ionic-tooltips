@@ -197,12 +197,6 @@ var Tooltip = (function () {
         else {
             positionLeft = rect.left;
         }
-        console.log('rect', rect);
-        console.log('rect.left', rect.left);
-        console.log('rect.width', rect.width);
-        console.log('el', el);
-        console.log('el.offsetWidth', el.offsetWidth);
-        console.log('tooltipNativeElement.offsetWidth', tooltipNativeElement.offsetWidth);
         if (this.positionV === 'top') {
             positionTop = rect.top - spacing - tooltipNativeElement.offsetHeight;
         }
