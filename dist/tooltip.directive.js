@@ -189,7 +189,7 @@ var Tooltip = (function () {
             positionLeft = rect.left - spacing - tooltipNativeElement.offsetWidth;
         }
         else if (this.positionH === 'center') {
-            positionLeft = rect.left - (rect.width - el.offsetWidth) / 2;
+            positionLeft = rect.left - (tooltipNativeElement.offsetWidth - el.offsetWidth) / 2;
         }
         else if (this.navTooltip) {
             positionLeft = rect.left + el.offsetWidth / 2;
@@ -202,7 +202,7 @@ var Tooltip = (function () {
         console.log('rect.width', rect.width);
         console.log('el', el);
         console.log('el.offsetWidth', el.offsetWidth);
-        console.log('el.clientWidth', el.clientWidth);
+        console.log('tooltipNativeElement.offsetWidth', tooltipNativeElement.offsetWidth);
         if (this.positionV === 'top') {
             positionTop = rect.top - spacing - tooltipNativeElement.offsetHeight;
         }
