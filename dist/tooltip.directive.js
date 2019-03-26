@@ -150,15 +150,11 @@ var Tooltip = (function () {
     };
     Tooltip.prototype.onClick = function (ev) {
         if (this.event === 'click') {
-            ev.preventDefault();
-            ev.stopPropagation();
             this.trigger();
         }
     };
     Tooltip.prototype.onPress = function (ev) {
         if (this.event === 'press') {
-            ev.preventDefault();
-            ev.stopPropagation();
             this.trigger();
         }
     };
